@@ -1,0 +1,13 @@
+$primary:pink;
+$secondary:blue;
+
+@import "../node_modules/bootstrap/scss/functions";
+@import "../node_modules/bootstrap/scss/variables";
+
+$custom-theme-colors: (
+    "maincolor": red,
+    "others": purple
+);
+$theme-colors: map-merge ($custom-theme-colors,$theme-colors);
+
+@import "../node_modules/bootstrap/scss/bootstrap";
